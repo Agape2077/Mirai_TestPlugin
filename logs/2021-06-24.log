@@ -1,0 +1,93 @@
+[92m2021-06-24 18:56:43 I/Net 2963535674: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:56:43 V/Net 2963535674: Send: wtlogin.login[0m
+[0m2021-06-24 18:56:43 V/Net 2963535674: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:56:43 I/Net 2963535674: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:56:43 V/Net 2963535674: Send: wtlogin.login[0m
+[0m2021-06-24 18:56:43 V/Net 2963535674: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:57:21 I/Net 2963535674: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:57:21 V/Net 2963535674: Send: wtlogin.login[0m
+[0m2021-06-24 18:57:21 V/Net 2963535674: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:57:21 I/Net 2963535674: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:57:21 V/Net 2963535674: Send: wtlogin.login[0m
+[0m2021-06-24 18:57:21 V/Net 2963535674: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:58:59 I/Net 421985594: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:59:00 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 18:59:00 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:59:00 I/Net 421985594: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:59:00 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 18:59:00 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 18:59:41 I/Net 741398387: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 18:59:41 V/Net 741398387: Send: wtlogin.login[0m
+[0m2021-06-24 18:59:42 V/Net 741398387: Recv: UnsafeLogin(url=https://ti.qq.com/safe/verify?_wv=2&_wwv=128&envfrom=device-lock&uin=741398387&sig=ULGhni11PJNXWA86fFTobmHC6bvdVqpneUcPrtREDEuXo55U4J3cQrr9iReB6Rq72MUwBa9OC94c7rU3FrHuctdTgvaIT0rqVRYjpgXZfMey32Lz22h9D6oYFhXEJ4JR)[0m
+[0m2021-06-24 19:00:26 V/Net 741398387: Send: wtlogin.login[0m
+[0m2021-06-24 19:00:26 V/Net 741398387: Recv: UnsafeLogin(url=https://ti.qq.com/safe/verify?_wv=2&_wwv=128&envfrom=device-lock&uin=741398387&sig=J87Maq0fvxypHYgXknV1LUdTLyKny2k7PlCFbiK97KymE4IuTLeGzlvkIbAmcQ9E3GRhpASGHQo2Iw5OtFdWWygoiIpiBkMVzwM75GXqyr1GJzvOpuRmi2jtz9ww883F)[0m
+[0m2021-06-24 19:00:48 V/Net 741398387: Send: wtlogin.login[0m
+[0m2021-06-24 19:00:48 V/Net 741398387: Recv: UnsafeLogin(url=https://ti.qq.com/safe/verify?_wv=2&_wwv=128&envfrom=device-lock&uin=741398387&sig=iXCXLq%2FlWqbPUIg3LEZM4aW59axuIJFvLzZCxFwtELoEMPxbEQAqH8b7OQSAXPZZMdvQLQCtYP84Be9oAyIybQpmO3F0FD3G4%2Bk%2BQsDUsydrWgE5piDz0Q98rWCv0%2B3j)[0m
+[0m2021-06-24 19:01:01 V/Net 741398387: Send: wtlogin.login[0m
+[0m2021-06-24 19:01:02 V/Net 741398387: Recv: UnsafeLogin(url=https://ti.qq.com/safe/verify?_wv=2&_wwv=128&envfrom=device-lock&uin=741398387&sig=kZt%2FNTJ%2Fhq4QnA0IBq6xNg1q0kzBtZOM8t0SKMlSBSn9%2Fq3CYgMf1V%2Fm7vtjOWjMMIYUxbnu5P8IDyu5JSrC%2Ba1z%2FKlZV5rGbrIG31%2BZ3g4rfBM6FHU1RFbtX2BEmbA9)[0m
+[92m2021-06-24 19:01:50 I/Net 421985594: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 19:01:50 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 19:01:50 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 19:01:50 I/Net 421985594: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 19:01:50 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 19:01:50 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 19:02:10 I/Net 74139387: Connected to server 114.221.148.59:14000[0m
+[0m2021-06-24 19:02:10 V/Net 74139387: Send: wtlogin.login[0m
+[31m2021-06-24 19:02:10 E/Net 74139387: Exception in NetworkHandler
+java.lang.IllegalStateException: Cannot find error message, unknown login result type: 18, TLVMap = {0x0000000A(10)=00 00 00 12 00 39 E4 BD A0 E8 BE 93 E5 85 A5 E7 9A 84 E5 B8 90 E5 8F B7 E4 B8 8D E5 AD 98 E5 9C A8 EF BC 8C E8 AF B7 E7 A1 AE E8 AE A4 E5 90 8E E9 87 8D E6 96 B0 E8 BE 93 E5 85 A5 E3 80 82, 0x00000508(1288)=01 00 00 0B B8 00 1B 02 00 00 00 00 00 00 00 00 08 10 00 00 00 12 00 00 00 00 7F 14 94 CF 00 00 00 12}
+	at net.mamoe.mirai.internal.network.protocol.packet.login.WtLogin$Login.decode(WtLogin.kt:360)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseOicqResponse(PacketFactory.kt:579)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.handleIncomingPacket$mirai_core(PacketFactory.kt:285)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseIncomingPacket(PacketFactory.kt:237)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.generifiedParsePacket(QQAndroidBotNetworkHandler.kt:562)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.parsePacket(QQAndroidBotNetworkHandler.kt:557)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler$parsePacketAsync$1.invokeSuspend(QQAndroidBotNetworkHandler.kt:540)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:738)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
+[0m
+[92m2021-06-24 19:02:15 I/Net 74139387: Connected to server 42.81.172.22:80[0m
+[0m2021-06-24 19:02:15 V/Net 74139387: Send: wtlogin.login[0m
+[31m2021-06-24 19:02:15 E/Net 74139387: Exception in NetworkHandler
+java.lang.IllegalStateException: Cannot find error message, unknown login result type: 18, TLVMap = {0x0000000A(10)=00 00 00 12 00 39 E4 BD A0 E8 BE 93 E5 85 A5 E7 9A 84 E5 B8 90 E5 8F B7 E4 B8 8D E5 AD 98 E5 9C A8 EF BC 8C E8 AF B7 E7 A1 AE E8 AE A4 E5 90 8E E9 87 8D E6 96 B0 E8 BE 93 E5 85 A5 E3 80 82, 0x00000508(1288)=01 00 00 0B B8 00 1B 02 00 00 00 00 00 00 00 00 08 10 00 00 00 12 00 00 00 00 55 70 2A 04 00 00 00 12}
+	at net.mamoe.mirai.internal.network.protocol.packet.login.WtLogin$Login.decode(WtLogin.kt:360)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseOicqResponse(PacketFactory.kt:579)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.handleIncomingPacket$mirai_core(PacketFactory.kt:285)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseIncomingPacket(PacketFactory.kt:237)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.generifiedParsePacket(QQAndroidBotNetworkHandler.kt:562)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.parsePacket(QQAndroidBotNetworkHandler.kt:557)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler$parsePacketAsync$1.invokeSuspend(QQAndroidBotNetworkHandler.kt:540)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:738)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
+[0m
+[92m2021-06-24 19:02:20 I/Net 74139387: Connected to server 42.81.172.147:443[0m
+[0m2021-06-24 19:02:20 V/Net 74139387: Send: wtlogin.login[0m
+[31m2021-06-24 19:02:20 E/Net 74139387: Exception in NetworkHandler
+java.lang.IllegalStateException: Cannot find error message, unknown login result type: 18, TLVMap = {0x0000000A(10)=00 00 00 12 00 39 E4 BD A0 E8 BE 93 E5 85 A5 E7 9A 84 E5 B8 90 E5 8F B7 E4 B8 8D E5 AD 98 E5 9C A8 EF BC 8C E8 AF B7 E7 A1 AE E8 AE A4 E5 90 8E E9 87 8D E6 96 B0 E8 BE 93 E5 85 A5 E3 80 82, 0x00000508(1288)=01 00 00 0B B8 00 1B 02 00 00 00 00 00 00 00 00 08 10 00 00 00 12 00 00 00 00 05 12 C8 F8 00 00 00 12}
+	at net.mamoe.mirai.internal.network.protocol.packet.login.WtLogin$Login.decode(WtLogin.kt:360)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseOicqResponse(PacketFactory.kt:579)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.handleIncomingPacket$mirai_core(PacketFactory.kt:285)
+	at net.mamoe.mirai.internal.network.protocol.packet.KnownPacketFactories.parseIncomingPacket(PacketFactory.kt:237)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.generifiedParsePacket(QQAndroidBotNetworkHandler.kt:562)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler.parsePacket(QQAndroidBotNetworkHandler.kt:557)
+	at net.mamoe.mirai.internal.network.QQAndroidBotNetworkHandler$parsePacketAsync$1.invokeSuspend(QQAndroidBotNetworkHandler.kt:540)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:738)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
+[0m
+[92m2021-06-24 19:02:29 I/Net 421985594: Connected to server 114.221.144.215:80[0m
+[0m2021-06-24 19:02:29 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 19:02:29 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
+[92m2021-06-24 19:02:29 I/Net 421985594: Connected to server 114.221.144.215:80[0m
+[0m2021-06-24 19:02:29 V/Net 421985594: Send: wtlogin.login[0m
+[0m2021-06-24 19:02:30 V/Net 421985594: Recv: LoginPacketResponse.Captcha.Slider[0m
