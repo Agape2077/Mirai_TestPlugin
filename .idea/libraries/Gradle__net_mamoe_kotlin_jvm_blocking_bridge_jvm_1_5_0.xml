@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.mamoe:kotlin-jvm-blocking-bridge-jvm:1.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe/kotlin-jvm-blocking-bridge-jvm/1.5.0/a5f0015ef00d2bd3272c406c0e2dcdf5835046a7/kotlin-jvm-blocking-bridge-jvm-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe/kotlin-jvm-blocking-bridge-jvm/1.5.0/64b5277a78ed43984474a7497142d8cc3acc2542/kotlin-jvm-blocking-bridge-jvm-1.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

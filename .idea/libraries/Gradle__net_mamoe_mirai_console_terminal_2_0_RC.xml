@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.mamoe:mirai-console-terminal:2.0-RC">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe/mirai-console-terminal/2.0-RC/70da6805d82ff85202fdffb92f1b71f1235b289a/mirai-console-terminal-2.0-RC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe/mirai-console-terminal/2.0-RC/1d638d833b4b003b455a62795bfe472ecde2dbfc/mirai-console-terminal-2.0-RC-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

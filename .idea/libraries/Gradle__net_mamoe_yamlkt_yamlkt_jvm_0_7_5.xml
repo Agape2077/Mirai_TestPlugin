@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.mamoe.yamlkt:yamlkt-jvm:0.7.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe.yamlkt/yamlkt-jvm/0.7.5/ce1396aa96254d33deaf9005d6b23ced70ca053d/yamlkt-jvm-0.7.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.mamoe.yamlkt/yamlkt-jvm/0.7.5/196a07636183dc3480db0bfa6ca7aa2c8284c94f/yamlkt-jvm-0.7.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
