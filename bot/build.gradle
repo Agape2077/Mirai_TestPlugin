@@ -7,6 +7,9 @@ mirai {
     coreVersion = "2.0-RC" // mirai-core version
 }
 
+repositories {
+    mavenCentral()
+}
 
 
 java {
@@ -16,4 +19,5 @@ java {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
 }
