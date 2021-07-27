@@ -50,7 +50,7 @@ public final class PluginMain extends JavaPlugin {
 //        if(input.equals("helloworld.agape")){
 //            messageEvent.getSubject().sendMessage(new PlainText("Hello World!! ").plus(new At(qqid)));
 //        }
-        //功能已实装
+        //已实装
          if(input.equals("修仙")){
             int value = someWatts.bonusDaily(String.valueOf(qqid));
             if(value>0){
@@ -63,22 +63,23 @@ public final class PluginMain extends JavaPlugin {
                 messageEvent.getSubject().sendMessage(new At(qqid).plus(",害修呢？不怕暴毙？\n啥？你没修？去翻翻群公告"));
             }
         }
-        //功能，但未实装
+        //已实装
         else if(input.equals("奇遇")){
             messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.bonusExtra(String.valueOf(qqid))));
         }
         //功能，但未实装
         else if(input.startsWith("挑衅")){
-            messageEvent.getSubject().sendMessage(new PlainText("很抱歉，"+name+ "，功能未实装"));
+            messageEvent.getSubject().sendMessage(new PlainText("挑锤子衅"));
         }
         //功能，但未实装
         else if(input.equals("吸收灵石")){
-            messageEvent.getSubject().sendMessage(new PlainText("很抱歉，"+name+ "，功能未实装"));
+            messageEvent.getSubject().sendMessage(new PlainText("吸锤子灵石"));
         }
+        //已实装
         else if (input.equals("查看")){
             messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.findone(String.valueOf(qqid))));
         }
-
+        //已实装
         else if (input.equals("排行")){
 
             ResultSet resultSet = someWatts.findAll();
