@@ -13,6 +13,7 @@ import net.mamoe.mirai.message.data.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.Random;
 /**
  * @author Agape
@@ -46,11 +47,11 @@ public final class PluginMain extends JavaPlugin {
         input = input.replaceAll("，",",");
         input = input.replaceAll("。",".");
         //测试用
-        if(input.equals("helloworld.agape")){
-            messageEvent.getSubject().sendMessage(new PlainText("Hello World!! ").plus(new At(qqid)));
-        }
+//        if(input.equals("helloworld.agape")){
+//            messageEvent.getSubject().sendMessage(new PlainText("Hello World!! ").plus(new At(qqid)));
+//        }
         //功能已实装
-        else if(input.equals("修仙")){
+         if(input.equals("修仙")){
             int value = someWatts.bonusDaily(String.valueOf(qqid));
             if(value>0){
                 if(value == 2147483644){
@@ -59,12 +60,12 @@ public final class PluginMain extends JavaPlugin {
                 someWatts.findone(String.valueOf(qqid));
                 messageEvent.getSubject().sendMessage(new At(qqid).plus("恭喜您!今日功德圆满! 共获得"+value+"点修为！\n"+someWatts.findone(String.valueOf(qqid))));
             }else {
-                messageEvent.getSubject().sendMessage(new At(qqid).plus(",害修呢？不怕暴毙？\n啥？你没修？那就喊Agape修我"));
+                messageEvent.getSubject().sendMessage(new At(qqid).plus(",害修呢？不怕暴毙？\n啥？你没修？去翻翻群公告"));
             }
         }
         //功能，但未实装
         else if(input.equals("奇遇")){
-            messageEvent.getSubject().sendMessage(new PlainText("很抱歉，"+name+ "，功能未实装"));
+            messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.bonusExtra(String.valueOf(qqid))));
         }
         //功能，但未实装
         else if(input.startsWith("挑衅")){
@@ -109,6 +110,14 @@ public final class PluginMain extends JavaPlugin {
             input = input.replaceAll(".r ","");
 
             messageEvent.getSubject().sendMessage(new PlainText("r到的数字是："+randomGenerator.ranGen(input)));
+        }
+        else if(input.startsWith("servertime")){
+            messageEvent.getSubject().sendMessage(
+                    new PlainText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)")
+                            .format(System.currentTimeMillis()))
+            );
+            System.out.println("terminal:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)").format(System.currentTimeMillis()));
+
         }
 
 
