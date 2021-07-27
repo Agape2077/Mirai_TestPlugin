@@ -160,7 +160,7 @@ public class SomeWatts {
                 qiyu_count = xiuxianDatal.getQiyu_count();
             }
 
-            if (xiuwei > 0){
+            if (qiyu_count > 0){
 
                 if (qiyuPercent - qiyup >0){
                     sql = "update xiuwei_list set qiyu_count = qiyu_count-1 where QQ_id = '"+QQId+"'";
