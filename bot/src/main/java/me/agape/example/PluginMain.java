@@ -69,11 +69,12 @@ public final class PluginMain extends JavaPlugin {
         }
         //功能，但未实装
         else if(input.startsWith("挑衅")){
-            messageEvent.getSubject().sendMessage(new PlainText("挑锤子衅"));
+             long qid = Long.parseLong(input.replaceAll(" ", "").replaceAll("挑衅@", ""));
+                     messageEvent.getSubject().sendMessage(someWatts.fight(String.valueOf(qqid),String.valueOf(qid)));
         }
         //功能，但未实装
         else if(input.equals("吸收灵石")){
-            messageEvent.getSubject().sendMessage(new PlainText("吸锤子灵石"));
+            messageEvent.getSubject().sendMessage(someWatts.stoneBonus(String.valueOf(qqid)));
         }
         //已实装
         else if (input.equals("查看")){
