@@ -76,14 +76,10 @@ public class SomeWatts {
         int tiaozhan_count = 0;
         Date last_date = null;
         String sql = "";
-        int xiuxnRandom = random.nextInt(500);
-        int xiuxianRanValue = xiuxnRandom;
-        int qiyuPercent = random.nextInt(100);
+        int xiuxianRanValue = random.nextInt(51);
         int dailyBonus = random.nextInt(100);
         try {
-            XiuxianDatal xiuxianDatal = new XiuxianDatal();
             sql = "select * from xiuwei_list where qq_id ='" + QQId + "'";
-
             statement = JDBCProperties.statement();
             resultSet = statement.executeQuery(sql);
             list = new ArrayList<XiuxianDatal>();
@@ -106,14 +102,12 @@ public class SomeWatts {
 
                 xiuwei = xiuwei + xiuxianRanValue;
                 qiyu_count = qiyu_count + 3;
-                if (dailyBonus <= 32) {
-                    blingshi++;
-                    mlingshi++;
-                    slingshi++;
-                }
-                if (dailyBonus <= 10) {
-                    hlingshi = hlingshi + 2;
-                }
+                //灵石获取概率
+                if (dailyBonus <=10) slingshi++;
+                if (dailyBonus <=6 ) mlingshi++;
+                if (dailyBonus <=3 ) blingshi++;
+                if (dailyBonus <=1 ) hlingshi++;
+
                 tiaozhan_count++;
                 last_date = new Date(System.currentTimeMillis());
                 String sqlUpdate = "UPDATE xiuwei_list SET  xiuwei = " + xiuwei + ", qiyu_count = " + qiyu_count + ", slingshi = " + slingshi + ", mlingshi = " + mlingshi + ", blingshi = " + blingshi + ", hlingshi = " + hlingshi + ",  tiaozhan_count = " + tiaozhan_count + ", last_date = \"" + new Date(System.currentTimeMillis()) + "\"  WHERE `qq_id` = " + QQId;
@@ -140,8 +134,8 @@ public class SomeWatts {
         Random random = new Random();
         int qiyu_count = 0;
         int qiyup = 20; //奇遇概率
-        int minusp = 30; //负值概率
-        int qiyumaxp = 40; //封顶值
+        int minusp = 33; //负值概率
+        int qiyumaxp = 67; //奇遇上下限
         int qiyuPercent = random.nextInt(100); //随机几率
         int qiyuMinusPercent = random.nextInt(100); //随机倒扣
         String sql = "";
@@ -210,14 +204,14 @@ public class SomeWatts {
         XiuxianDatal xiuxianDatal = new XiuxianDatal();
         String sql = "";
         Random random = new Random();
-        int sStoneDiff = 5;  //小石头diff
-        int mStoneDiff = 15; //中石头diff
-        int bStoneDiff = 10; //大石头diff
-        int hStoneDIff = 20; //特石头diff
-        int sStoneMin = 5;   //小石头最小值
-        int mStoneMin = 15;  //中石头最小值
-        int bStoneMin = 25;  //大石头最小值
-        int hStoneMin = 35;  //特石头最小值
+        int sStoneDiff = 2;  //小石头diff
+        int mStoneDiff = 3; //中石头diff
+        int bStoneDiff = 6; //大石头diff
+        int hStoneDIff = 11; //特石头diff
+        int sStoneMin = 1;   //小石头最小值
+        int mStoneMin = 3;  //中石头最小值
+        int bStoneMin = 5;  //大石头最小值
+        int hStoneMin = 10;  //特石头最小值
         int sStoneBonus, mStoneBonus, bStoneBonus, hStoneBonus, xiuweiBonus = 0;
 
         sql = "select xiuwei, hlingshi,blingshi,mlingshi,slingshi from xiuwei_list where QQ_id = '" + QQId + "'";

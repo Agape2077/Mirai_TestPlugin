@@ -1,4 +1,4 @@
-package me.agape.example;
+package me.agape.example.waw;
 
 import java.util.Random;
 

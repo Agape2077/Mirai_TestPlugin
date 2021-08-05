@@ -1,13 +1,12 @@
 package me.agape.example;
 
+import me.agape.example.waw.OtherBonus;
+import me.agape.example.waw.RandomGenerator;
 import me.agape.example.waw.SomeWatts;
 import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
-import net.mamoe.mirai.contact.User;
 import net.mamoe.mirai.event.GlobalEventChannel;
 import net.mamoe.mirai.event.Listener;
-import net.mamoe.mirai.event.events.FriendMessageEvent;
-import net.mamoe.mirai.event.events.GroupMessageEvent;
 import net.mamoe.mirai.event.events.MessageEvent;
 import net.mamoe.mirai.message.data.*;
 
@@ -15,11 +14,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Random;
+
 /**
  * @author Agape
  */
 public final class PluginMain extends JavaPlugin {
     SomeWatts someWatts = new SomeWatts();
+    OtherBonus otherBonus = new OtherBonus();
     RandomGenerator randomGenerator = new RandomGenerator();
     public static final PluginMain INSTANCE = new PluginMain();
     private PluginMain() {
@@ -34,13 +35,13 @@ public final class PluginMain extends JavaPlugin {
         getLogger().info("plugin Started");
         Listener listener = GlobalEventChannel.INSTANCE.subscribeAlways(MessageEvent.class,g->{
             try {
-                RunPrefix(g.getMessage().contentToString(),g,g.getSender().getId(),g.getSender().getNick());
-            } catch (SQLException | ClassNotFoundException throwables) {
+                RunPrefix(g.getMessage().contentToString(),g,g.getSender().getId(),g.getSender().getNick(),g.getSubject().getId());
+            } catch (ClassNotFoundException | SQLException throwables) {
                 throwables.printStackTrace();
             }
         });
     }
-    private void RunPrefix(String input, MessageEvent messageEvent,long qqid,String name) throws SQLException, ClassNotFoundException {
+    private void RunPrefix(String input, MessageEvent messageEvent,long qqid,String name,long groupid) throws SQLException, ClassNotFoundException {
         //大小写转换
         input = input.toLowerCase();
         //中英文标点符号转换
@@ -121,6 +122,21 @@ public final class PluginMain extends JavaPlugin {
             System.out.println("terminal:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)").format(System.currentTimeMillis()));
 
         }
+
+        else if(input.startsWith("扣修为")){
+            if (qqid == 745502806 || qqid == 741398387){
+                //逻辑
+            }else {
+                messageEvent.getSubject().sendMessage("你扣你🐴呢？");
+            }
+         }
+        else if (groupid == 341958124){
+            Random random = new Random();
+            int bonus = random.nextInt(100);
+             System.out.println(bonus);
+            if (bonus==69) messageEvent.getSubject().sendMessage(otherBonus.talkingBonus(String.valueOf(qqid)));
+
+         }
 
 
     }
