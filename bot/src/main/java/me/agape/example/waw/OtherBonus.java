@@ -22,7 +22,7 @@ public class OtherBonus {
             try{
                 statement = JDBCProperties.statement();
                 resultSet = statement.executeQuery(sql);
-                return "触发发言奖励，奖励1修为(Alpha)";
+                return "这个B刚刚触发了发言奖励，Ins赏了他1修为";
             }catch (Exception e){
                 return String.valueOf(e);
             }

@@ -134,8 +134,7 @@ public final class PluginMain extends JavaPlugin {
             Random random = new Random();
             int bonus = random.nextInt(100);
              System.out.println(bonus);
-            if (bonus==69) messageEvent.getSubject().sendMessage(otherBonus.talkingBonus(String.valueOf(qqid)));
-
+            if (bonus==69 || bonus == 6 || bonus == 9) messageEvent.getSubject().sendMessage(otherBonus.talkingBonus(String.valueOf(qqid))+"，Bonus数值为"+bonus);
          }
 
 
