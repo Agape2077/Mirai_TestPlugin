@@ -79,7 +79,7 @@ public final class PluginMain extends JavaPlugin {
         }
         //已实装
         else if (input.equals("查看")){
-            messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.findone(String.valueOf(qqid))));
+            messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.findone(String.valueOf(qqid)))).recallIn(20000);
         }
         //已实装
         else if (input.equals("排行")){
@@ -132,9 +132,12 @@ public final class PluginMain extends JavaPlugin {
          }
         else if (groupid == 341958124){
             Random random = new Random();
-            int bonus = random.nextInt(100);
-             System.out.println(bonus);
-            if (bonus==69 || bonus == 6 || bonus == 9) messageEvent.getSubject().sendMessage(otherBonus.talkingBonus(String.valueOf(qqid))+"，Bonus数值为"+bonus);
+            int bonus1 = random.nextInt(101);
+             System.out.println(bonus1);
+            if (bonus1==82) messageEvent.getSubject().sendMessage(otherBonus.talkingBonus(String.valueOf(qqid))+"，Bonus数值为"+bonus1);
+             int bonus2 = random.nextInt(1001);
+             System.out.println(bonus2);
+             if (bonus2==777) messageEvent.getSubject().sendMessage(otherBonus.talkingBonusCoin(String.valueOf(qqid))+"，Bonus数值为"+bonus2);
          }
 
 

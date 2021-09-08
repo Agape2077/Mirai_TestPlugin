@@ -47,6 +47,8 @@ public class SomeWatts {
                 xiuxianDatal.setMlingshi(resultSet.getInt("Mlingshi"));
                 xiuxianDatal.setBlingshi(resultSet.getInt("BLingshi"));
                 xiuxianDatal.setHlingshi(resultSet.getInt("Hlingshi"));
+                xiuxianDatal.setCoin(resultSet.getInt("coins"));
+                xiuxianDatal.setPts(resultSet.getInt("pts"));
             }
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -56,12 +58,15 @@ public class SomeWatts {
             return xiuxianDatal.getQQ_id() + "请联系@CQCODE_741398387进行添加。";
         } else {
             return "修为：" + xiuxianDatal.getXiuwei() +
+                    "\n硬币："+xiuxianDatal.getCoin()+
+                    "\n点数："+xiuxianDatal.getPts()+
                     "\n上次修仙时间：" + new SimpleDateFormat("yyyy年MM月dd日").format(xiuxianDatal.getLast_date()) +
                     "\n寻访次数：" + xiuxianDatal.getQiyu_count() +
                     "\n小灵石：" + xiuxianDatal.getSlingshi() +
                     "\n中灵石：" + xiuxianDatal.getMlingshi() +
                     "\n大灵石：" + xiuxianDatal.getHlingshi() +
-                    "\n极品灵石：" + xiuxianDatal.getHlingshi();
+                    "\n极品灵石：" + xiuxianDatal.getHlingshi()
+                    ;
         }
     }
 
@@ -74,6 +79,7 @@ public class SomeWatts {
         int mlingshi = 0;
         int slingshi = 0;
         int tiaozhan_count = 0;
+
         Date last_date = null;
         String sql = "";
         int xiuxianRanValue = random.nextInt(51);
@@ -91,6 +97,7 @@ public class SomeWatts {
                 mlingshi = resultSet.getInt("mlingshi");
                 slingshi = resultSet.getInt("slingshi");
                 tiaozhan_count = resultSet.getInt("tiaozhan_count");
+
                 last_date = resultSet.getDate("last_date");
             }
         } catch (SQLException | ClassNotFoundException e) {
@@ -135,7 +142,7 @@ public class SomeWatts {
         int qiyu_count = 0;
         int qiyup = 20; //奇遇概率
         int minusp = 33; //负值概率
-        int qiyumaxp = 67; //奇遇上下限
+        int qiyumaxp = 51; //奇遇上下限
         int qiyuPercent = random.nextInt(100); //随机几率
         int qiyuMinusPercent = random.nextInt(100); //随机倒扣
         String sql = "";

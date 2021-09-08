@@ -13,6 +13,24 @@ public class XiuxianDatal {
     private Integer slingshi;
     private Integer tiaozhan_count;
     private Date last_date;
+    private Integer coin;
+    private Integer pts;
+
+    public Integer getCoin() {
+        return coin;
+    }
+
+    public void setCoin(Integer coin) {
+        this.coin = coin;
+    }
+
+    public Integer getPts() {
+        return pts;
+    }
+
+    public void setPts(Integer pts) {
+        this.pts = pts;
+    }
 
     public Integer getId() {
         return id;
