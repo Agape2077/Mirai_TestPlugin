@@ -1,4 +1,3 @@
 # AgapeTestPlugin
 
-Mirai-console的插件模板
-
+垃圾人用垃圾代码写的垃圾插件

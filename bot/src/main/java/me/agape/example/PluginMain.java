@@ -114,22 +114,22 @@ public final class PluginMain extends JavaPlugin {
 
             messageEvent.getSubject().sendMessage(new PlainText("r到的数字是："+randomGenerator.ranGen(input)));
         }
-        else if(input.startsWith("servertime")){
-            messageEvent.getSubject().sendMessage(
-                    new PlainText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)")
-                            .format(System.currentTimeMillis()))
-            );
-            System.out.println("terminal:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)").format(System.currentTimeMillis()));
+//        else if(input.startsWith("servertime")){
+//            messageEvent.getSubject().sendMessage(
+//                    new PlainText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)")
+//                            .format(System.currentTimeMillis()))
+//            );
+//            System.out.println("terminal:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)").format(System.currentTimeMillis()));
+//
+//        }
 
-        }
-
-        else if(input.startsWith("扣修为")){
-            if (qqid == 745502806 || qqid == 741398387){
-                //逻辑
-            }else {
-                messageEvent.getSubject().sendMessage("你扣你🐴呢？");
-            }
-         }
+//        else if(input.startsWith("扣修为")){
+//            if (qqid == 745502806 || qqid == 741398387){
+//                //逻辑
+//            }else {
+//                messageEvent.getSubject().sendMessage("你扣你🐴呢？");
+//            }
+//         }
         else if (groupid == 341958124){
             Random random = new Random();
             int bonus1 = random.nextInt(101);

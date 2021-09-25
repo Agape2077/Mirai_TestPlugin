@@ -22,9 +22,9 @@ public class RandomGenerator {
             int _in_num = Integer.parseInt(in_num);
             Random random = new Random();
             //转换成String后再输出
-            return String.valueOf(random.nextInt(_in_num));
+            return String.valueOf(random.nextInt(_in_num)+1);
         }catch (Exception e){
-            return "bug了，没数字";
+            return "你空格加到你🐴身上了啊？";
         }
     }
 }
