@@ -79,7 +79,7 @@ public final class PluginMain extends JavaPlugin {
         }
         //已实装
         else if (input.equals("查看")){
-            messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.findone(String.valueOf(qqid)))).recallIn(20000);
+            messageEvent.getSubject().sendMessage(new At(qqid).plus(someWatts.findone(String.valueOf(qqid)))).recallIn(100000);
         }
         //已实装
         else if (input.equals("排行")){
@@ -108,6 +108,26 @@ public final class PluginMain extends JavaPlugin {
             resultSet.close();
 
         }
+        //bonus-determine
+        else if (input.startsWith("/change")){
+             System.out.println(qqid);
+            if (qqid == 741398387 || qqid == 745502806) {
+                String[] changes = input.replaceAll("/change", "").split("\\s+");
+                messageEvent.getSubject().sendMessage(someWatts.changeBonus(changes[1], Integer.parseInt(changes[2])));
+            }
+            else messageEvent.getSubject().sendMessage("Permission Denied");
+         }
+        //clear
+        else if (input.startsWith("/clear")){
+             if (qqid == 741398387 || qqid == 745502806) {
+            messageEvent.getSubject().sendMessage(
+         someWatts.clearBonus(
+                 Integer.parseInt(input.replaceAll("/clear",""))
+         ));
+         }
+             else messageEvent.getSubject().sendMessage("Permission Denied");
+        }
+
         //gen个随机数拿来roll
         else if(input.startsWith(".r")){
             input = input.replaceAll(".r ","");

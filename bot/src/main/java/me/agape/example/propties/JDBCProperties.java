@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 public class JDBCProperties {
     public static Statement statement() throws ClassNotFoundException {
-        String url = "jdbc:mariadb://97.64.111.135:3306/xiuxian";
+        String url = "jdbc:mariadb://23.105.222.9:3306/xiuxian";
         String name = "root";
         String password = "chh741398387";
         String Driver = "org.mariadb.jdbc.Driver";

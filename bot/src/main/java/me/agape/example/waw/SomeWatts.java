@@ -82,7 +82,7 @@ public class SomeWatts {
 
         Date last_date = null;
         String sql = "";
-        int xiuxianRanValue = random.nextInt(51);
+        int xiuxianRanValue = random.nextInt(35)+1;
         int dailyBonus = random.nextInt(100);
         try {
             sql = "select * from xiuwei_list where qq_id ='" + QQId + "'";
@@ -114,9 +114,7 @@ public class SomeWatts {
                 if (dailyBonus <=6 ) mlingshi++;
                 if (dailyBonus <=3 ) blingshi++;
                 if (dailyBonus <=1 ) hlingshi++;
-
                 tiaozhan_count++;
-                last_date = new Date(System.currentTimeMillis());
                 String sqlUpdate = "UPDATE xiuwei_list SET  xiuwei = " + xiuwei + ", qiyu_count = " + qiyu_count + ", slingshi = " + slingshi + ", mlingshi = " + mlingshi + ", blingshi = " + blingshi + ", hlingshi = " + hlingshi + ",  tiaozhan_count = " + tiaozhan_count + ", last_date = \"" + new Date(System.currentTimeMillis()) + "\"  WHERE `qq_id` = " + QQId;
                 try {
                     resultSet = statement.executeQuery(sqlUpdate);
@@ -140,9 +138,9 @@ public class SomeWatts {
         //定义一群b
         Random random = new Random();
         int qiyu_count = 0;
-        int qiyup = 20; //奇遇概率
+        int qiyup = 21; //奇遇概率
         int minusp = 33; //负值概率
-        int qiyumaxp = 51; //奇遇上下限
+        int qiyumaxp = 36; //奇遇上下限
         int qiyuPercent = random.nextInt(100); //随机几率
         int qiyuMinusPercent = random.nextInt(100); //随机倒扣
         String sql = "";
@@ -250,5 +248,69 @@ public class SomeWatts {
         return "吸收成功！获得" + xiuweiBonus + "点修为！";
 
 
+    }
+
+    public String changeBonus(String qqId, int bonus){
+        int xiuwei_before = 0;
+        int xiuwei_after = 0;
+        //before
+        String sql = "select xiuwei from xiuwei_list where qq_id = "+qqId;
+        try {
+            statement = JDBCProperties.statement();
+            resultSet = statement.executeQuery(sql);
+            while(resultSet.next()){
+                xiuwei_before = resultSet.getInt("xiuwei");
+            }
+
+        }catch (Exception e){
+            return "Query 1 error:"+e;
+        }
+
+        sql = "update xiuwei_list set xiuwei = xiuwei+"+bonus+" where qq_id = "+qqId;
+        System.out.println("sql");
+        try {
+            statement = JDBCProperties.statement();
+            resultSet = statement.executeQuery(sql);
+        }catch (Exception e){
+            return "Query 2 error:"+e;
+        }
+
+        sql = "select xiuwei from xiuwei_list where qq_id = "+qqId;
+        try {
+            statement = JDBCProperties.statement();
+            resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                xiuwei_after = resultSet.getInt("xiuwei");
+            }
+        }catch (Exception e){
+            return "Query 3 error:"+e;
+        }
+
+        return "success! \n" +
+                "before:"+xiuwei_before+"\n" +
+                "after:"+xiuwei_after;
+    }
+
+    public String clearBonus(int type){
+        if (type == 1){                  //扣奇遇
+            String sql = "update xiuwei_list set qiyu_count = 0";
+            try {
+                statement = JDBCProperties.statement();
+                resultSet = statement.executeQuery(sql);
+            }catch (Exception e){
+                return String.valueOf(e);
+            }
+            return "Success";
+        }else if (type == 2){            //扣奇遇+零食
+            String sql = "update xiuwei_list setqiyu_count = 0,`hlingshi`=0,`blingshi`=0,`mlingshi`=0,`slingshi`=0";
+            try {
+                statement = JDBCProperties.statement();
+                resultSet = statement.executeQuery(sql);
+            }catch (Exception e){
+                return String.valueOf(e);
+            }
+            return "Success.";
+        }
+        return "Syntax Error.";
     }
 }
