@@ -3,6 +3,7 @@ package me.agape.example;
 import me.agape.example.waw.OtherBonus;
 import me.agape.example.waw.RandomGenerator;
 import me.agape.example.waw.SomeWatts;
+import me.agape.example.waw.DiceGame;
 import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
 import net.mamoe.mirai.event.GlobalEventChannel;
@@ -22,6 +23,7 @@ public final class PluginMain extends JavaPlugin {
     SomeWatts someWatts = new SomeWatts();
     OtherBonus otherBonus = new OtherBonus();
     RandomGenerator randomGenerator = new RandomGenerator();
+    DiceGame dicegame = new DiceGame();
     public static final PluginMain INSTANCE = new PluginMain();
     private PluginMain() {
         super(new JvmPluginDescriptionBuilder("me.agape.test", "0.0.1")
@@ -134,22 +136,41 @@ public final class PluginMain extends JavaPlugin {
 
             messageEvent.getSubject().sendMessage(new PlainText("r到的数字是："+randomGenerator.ranGen(input)));
         }
-//        else if(input.startsWith("servertime")){
-//            messageEvent.getSubject().sendMessage(
-//                    new PlainText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)")
-//                            .format(System.currentTimeMillis()))
-//            );
-//            System.out.println("terminal:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss (a)").format(System.currentTimeMillis()));
-//
-//        }
+        else if(input.startsWith("骰子")){
+            try {
+                String[] type = input.replaceAll("骰子 ","").split("\\s+");
+                String send = "";
+                switch (type[0]){
+                    case "大小":
+                        if (type[1] == "大"){
+                            type[1] = "2";
+                        }else if (type[1] == "小"){
+                            type[1] = "1";
+                        }
+                        send = dicegame.compareSize(String.valueOf(qqid),Integer.parseInt(type[1]),Integer.parseInt(type[2]));
+                        break;
+                    case "面点":
+                        send = dicegame.dicePoints(String.valueOf(qqid),Integer.parseInt(type[1]),Integer.parseInt(type[2]));
+                        break;
+                    case "豹子":
+                        if (type[1] == "任意") send = dicegame.anyLeopard(String.valueOf(qqid),Integer.parseInt(type[2]));
+                        else send = dicegame.specLeopard(String.valueOf(qqid),Integer.parseInt(type[1]),Integer.parseInt(type[2]));
+                        break;
+                    case "和点":
+                        send = dicegame.dicePointSum(String.valueOf(qqid),Integer.parseInt(type[1]),Integer.parseInt(type[2]));
+                        break;
+                    default:
+                        send = "你骰你妈呢？";
+                        break;
+                }
+                messageEvent.getSubject().sendMessage(send);
+            }catch (Exception e){
+                e.printStackTrace();
+                messageEvent.getSubject().sendMessage((Message)e);
+            }
 
-//        else if(input.startsWith("扣修为")){
-//            if (qqid == 745502806 || qqid == 741398387){
-//                //逻辑
-//            }else {
-//                messageEvent.getSubject().sendMessage("你扣你🐴呢？");
-//            }
-//         }
+         }
+
         else if (groupid == 341958124){
             Random random = new Random();
             int bonus1 = random.nextInt(101);
